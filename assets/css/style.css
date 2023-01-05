@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --clr-primary-gradient-one: hsl(6, 100%, 80%);
+    --clr-primary-gradient-two: hsl(335, 100%, 65%);
+
+    --clr-neutral-pele-blue: hsl(243, 100%, 93%);
+    --clr-neutral-grayish-blue: hsl(229, 7%, 55%);
+    --clr-neutral-dark-blue: hsl(228, 56%, 26%);
+    --clr-neutral-very-dark-blue: hsl(229, 57%, 11%);
+}
+
+#page-wrap {
+    background-image: url("../images/bg-mobile.png");
+    background-color: var(--clr-neutral-very-dark-blue);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Main */
+#main {
+    max-width: 1440px;
+    width: 85%;
+    margin: calc(125rem / 16) auto;
+}
+
+@media (min-width: 915px) {
+    #page-wrap {
+        background-image: url("../images/bg-desktop.png");
+    }
+
+    #main {
+        width: 67%;
+    }
+}
+
+
+.box {
+    background-color: var(--clr-neutral-dark-blue);
+    padding: 2.3rem;
+}
+
+/* Box 1 */
+.box-one {
+    border-radius: .5rem 50% .5rem .5rem;
+}
+
+    #img-logo {
+        max-width: calc(120rem / 16);
+    }
+
+    /* Icons Box */
+    .icons-box {
+        display: flex; /* Icons in row */
+        gap: 1rem;
+    }
+
+    .img-box {
+        display: grid;
+        place-items: center;
+        margin-top: 1.5rem; /* Space between logo and icons */
+        padding: .6rem; /* The size icons boxes */
+        background-color: var(--clr-neutral-very-dark-blue);
+        border-radius: .5rem;
+    }
+
+
+/* Box 2 */
+.box-two {
+    margin-top: 1rem; /* Space between boxes */
+    border-radius: .5rem;
+}
+
+/* Footer */
+.attribution {
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
