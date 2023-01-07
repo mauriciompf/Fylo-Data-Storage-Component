@@ -100,8 +100,8 @@
         position: absolute;
         right: .1rem;
         top: .03rem;
-        min-height: .8rem;
         min-width: .8rem;
+        aspect-ratio: 1 / 1;
         border-radius: 50%;
         background-color: hsl(255, 100%, 100%);
     }
@@ -150,8 +150,8 @@
             display: block;
             position: absolute;
             background-color: #fff;
-            width: 20px;
-            height: 20px;
+            min-width: 1.25rem;
+            aspect-ratio: 1 / 1;
             right: 0;
             bottom: calc(-18rem / 16);
             background: linear-gradient(to top right, transparent 50%, #fff 50%), center/cover;
